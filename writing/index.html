@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>写作 — 汤军军</title>
+  <meta name="description" content="汤军军写过的东西：已发表作品、剧评、书评、影评、短篇、读书笔记与出版实践。" />
+  <link rel="icon" type="image/svg+xml" href="../assets/images/footer-avatar.svg" />
+  <link rel="stylesheet" href="../assets/css/tokens.css" />
+  <link rel="stylesheet" href="../assets/css/base.css" />
+  <link rel="stylesheet" href="../assets/css/components.css" />
+</head>
+<body>
+
+  <a href="#main" class="skip-link">跳到主要内容</a>
+
+  <header class="nav" role="banner">
+    <div class="nav__inner">
+      <a href="../index.html" class="nav__brand">汤军军<span class="nav__brand-dot" aria-hidden="true"></span></a>
+      <nav class="nav__menu" aria-label="主导航">
+        <a href="../index.html#works" class="nav__link">作品</a>
+        <a href="../index.html#writing" class="nav__link">写作</a>
+        <a href="../index.html#about" class="nav__link">关于</a>
+        <a href="../index.html#contact" class="btn btn--primary nav__cta">联系</a>
+        <button class="nav__theme" data-theme-toggle type="button" aria-pressed="false" aria-label="切换深色模式">☾</button>
+      </nav>
+      <button class="nav__burger" aria-label="打开菜单" aria-expanded="false">
+        <svg width="20" height="14" viewBox="0 0 20 14" fill="none">
+          <path d="M0 1h20M0 7h20M0 13h20" stroke="currentColor" stroke-width="2"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="main" class="writing-page">
+
+    <section class="container">
+      <div class="writing-page__head reveal">
+        <span class="eyebrow">WRITING</span>
+        <h1 class="writing-page__title">写过的东西</h1>
+        <p class="writing-page__lede">纸媒发表、评论节选、短篇与随笔。按体裁与发表状态分组，正文均为原文节选，未作改写。</p>
+      </div>
+
+      <!-- 状态筛选（数据驱动） -->
+      <div class="filter-bar-v2" data-writing-filter role="tablist" aria-label="按发表状态筛选"></div>
+
+      <!-- 内容列表（数据驱动） -->
+      <div data-writing-list></div>
+
+      <!-- 空状态 -->
+      <div class="writing-empty" data-writing-empty>当前筛选下暂无条目。</div>
+
+      <!-- 关于版权 -->
+      <div class="section__head reveal" style="margin-top: var(--space-24); align-items: center; text-align: center;">
+        <span class="eyebrow">NOTE</span>
+        <h2 class="title">关于版权</h2>
+        <p class="muted">
+          已发表作品（《湖北招生考试》2021 年第 1 期《延长的青春》）仅展示标题、刊物信息和节选。<br />
+          小红书评论与短篇、未发表创作欢迎阅读，并欢迎讨论，不要未经授权转载。
+        </p>
+      </div>
+    </section>
+
+    <div class="container" style="margin-top: var(--space-16); margin-bottom: var(--space-16); text-align: center;">
+      <a href="../index.html" class="btn btn--ghost">← 回到首页</a>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__bottom">
+        <span>© <span data-year>2026</span> 汤军军</span>
+        <a href="../index.html" style="color: var(--ink-muted);">← 回到首页</a>
+      </div>
+    </div>
+  </footer>
+
+  <button class="totop" data-totop aria-label="回到顶部">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M8 14V2M2 8l6-6 6 6"/>
+    </svg>
+  </button>
+
+  <script src="../assets/js/nav.js"></script>
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/data.js"></script>
+  <script src="../assets/js/render.js"></script>
+</body>
+</html>

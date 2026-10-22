@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ⚠ 占位域名 · 上线域名确定后（B4 议题）请把下方 4 个 <loc> 整体替换为真实绝对 URL。
+  当前占位采用 GitHub Pages 项目站默认路径（用户名 / 仓库名）。
+  部署到自定义域名（如 https://tangjunjun.cn/）时，直接整体改 host 即可。
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://jt1934378847-bot.github.io/portfolio-site/index.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://jt1934378847-bot.github.io/portfolio-site/works/under-the-bluestone.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jt1934378847-bot.github.io/portfolio-site/works/co-reader.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jt1934378847-bot.github.io/portfolio-site/works/liangrenshe.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jt1934378847-bot.github.io/portfolio-site/writing/index.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+</urlset>

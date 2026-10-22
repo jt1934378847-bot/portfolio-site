@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 375" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bluestone-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1F1B36"/>
+      <stop offset="60%" stop-color="#3A2C66"/>
+      <stop offset="100%" stop-color="#5A3FB0"/>
+    </linearGradient>
+    <pattern id="dots" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="3" r="1" fill="rgba(255,255,255,0.08)"/>
+    </pattern>
+  </defs>
+  <rect width="600" height="375" fill="url(#bluestone-bg)"/>
+  <rect width="600" height="375" fill="url(#dots)"/>
+  <g opacity="0.85">
+    <polygon points="120,260 200,140 280,260" fill="rgba(255,255,255,0.15)"/>
+    <polygon points="280,260 360,110 440,260" fill="rgba(255,255,255,0.10)"/>
+    <polygon points="440,260 520,160 600,260 600,375 440,375" fill="rgba(255,255,255,0.08)"/>
+  </g>
+  <g font-family="Georgia, serif" fill="#F4EFE6">
+    <text x="60" y="110" font-size="56" font-weight="500" letter-spacing="-2">青石之下</text>
+    <text x="60" y="140" font-size="14" letter-spacing="3" fill="#B59CFF">A REASONING VISUAL NOVEL · 2026</text>
+  </g>
+  <g font-family="-apple-system, sans-serif" fill="rgba(244,239,230,0.7)" font-size="11" letter-spacing="2">
+    <text x="60" y="320">[ PLAY ]  ▶</text>
+    <text x="60" y="338">剧情 / 程序 · 汤军军</text>
+  </g>
+</svg>

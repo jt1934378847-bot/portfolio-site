@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>《Co-Reader》 — 汤军军</title>
+  <meta name="description" content="AI 赋能·数智创新创客训练营作品 · 校级团队二等奖。集成 OpenAI / DeepSeek / Moonshot 的双语阅读器。" />
+  <link rel="icon" type="image/svg+xml" href="../assets/images/footer-avatar.svg" />
+  <link rel="stylesheet" href="../assets/css/tokens.css" />
+  <link rel="stylesheet" href="../assets/css/base.css" />
+  <link rel="stylesheet" href="../assets/css/components.css" />
+</head>
+<body>
+
+  <a href="#main" class="skip-link">跳到主要内容</a>
+
+  <header class="nav" role="banner">
+    <div class="nav__inner">
+      <a href="../index.html" class="nav__brand">汤军军<span class="nav__brand-dot" aria-hidden="true"></span></a>
+      <nav class="nav__menu" aria-label="主导航">
+        <a href="../index.html#works" class="nav__link">作品</a>
+        <a href="../index.html#writing" class="nav__link">写作</a>
+        <a href="../index.html#about" class="nav__link">关于</a>
+        <a href="../index.html#contact" class="btn btn--primary nav__cta">联系</a>
+        <button class="nav__theme" data-theme-toggle type="button" aria-pressed="false" aria-label="切换深色模式">☾</button>
+      </nav>
+      <button class="nav__burger" aria-label="打开菜单" aria-expanded="false">
+        <svg width="20" height="14" viewBox="0 0 20 14" fill="none">
+          <path d="M0 1h20M0 7h20M0 13h20" stroke="currentColor" stroke-width="2"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="proj-hero">
+      <div class="container">
+        <div class="proj-hero__inner">
+          <div>
+            <span class="eyebrow reveal">线上项目 · AI 阅读器</span>
+            <h1 class="proj-hero__title reveal">《Co-Reader》</h1>
+            <p class="proj-hero__tag reveal">
+              一款不打断阅读节奏的双语阅读器。集成多模型，生词本 / 高亮笔记 / 心流仪表盘都是嵌入阅读本身的服务。
+            </p>
+            <div class="hero__cta reveal" style="margin-top: 32px">
+              <a href="https://co-reader.pocketbay.app/" target="_blank" rel="noopener" class="btn btn--primary">
+                在线体验 <span class="arrow">→</span>
+              </a>
+              <a href="https://github.com/jt1934378847-bot" target="_blank" rel="noopener" class="btn btn--ghost">
+                GitHub
+              </a>
+              <a href="https://xhslink.cn/o/9xpza9bXm2U" target="_blank" rel="noopener" class="btn btn--ghost">
+                项目视频简介 · 小红书
+              </a>
+            </div>
+          </div>
+          <dl class="proj-card reveal">
+            <div>
+              <dt>时间</dt>
+              <dd>2026.08</dd>
+            </div>
+            <div>
+              <dt>角色</dt>
+              <dd>负责人 · 策划 / 设计 / 开发 / 测试</dd>
+            </div>
+            <div>
+              <dt>团队</dt>
+              <dd>四人（队员主要负责测试与答辩）</dd>
+            </div>
+            <div>
+              <dt>主办</dt>
+              <dd>AI 赋能·数智创新创客训练营</dd>
+            </div>
+            <div>
+              <dt>奖项</dt>
+              <dd>校级团队二等奖</dd>
+            </div>
+            <div>
+              <dt>技术</dt>
+              <dd>原生 HTML / CSS / JS · OpenAI · DeepSeek · Moonshot</dd>
+            </div>
+            <div>
+              <dt>数据</dt>
+              <dd>上线后累计 100+ 点赞评论 · 50+ 后台用户使用</dd>
+            </div>
+            <div>
+              <dt>笔记</dt>
+              <dd><a href="https://xhslink.cn/o/9xpza9bXm2U" target="_blank" rel="noopener">项目视频简介 · 小红书</a></dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="proj-cover reveal">
+          <img src="../assets/images/projects/co-reader-cover.svg" alt="Co-Reader 封面视觉" width="1600" height="900" />
+        </div>
+      </div>
+    </section>
+
+    <section class="container reading" style="padding-top: var(--space-12)">
+
+      <div class="proj-block reveal">
+        <div class="proj-block__label">背景 / 问题</div>
+        <div class="proj-block__body">
+          <p>
+            创客训练营要求两周内产出一个最小可行产品。我一直以来有「读英文读不下去」的问题，身边很多人也如此 —— 工具一多就分心，工具一少又读不下去。
+          </p>
+          <p>
+            我想做的是：把「学」嵌入「读」里。让生词、高亮、统计这些动作成为阅读的副产品，而不打断阅读本身。
+          </p>
+        </div>
+      </div>
+
+      <div class="proj-block reveal">
+        <div class="proj-block__label">我的工作</div>
+        <div class="proj-block__body">
+          <ul>
+            <li>作为负责人统筹节奏：在需求、设计、实现、答辩四条线同时推进，并主导 PRD 输出。</li>
+            <li>构建生词本、高亮笔记、阅读统计与心流仪表盘 —— 核心是把「学」嵌入「读」里。</li>
+            <li>实现笔记导出与多模型接口抽象层，让阅读器可以无缝切换 OpenAI、DeepSeek、Moonshot 与自定义端点，便于后续接入。</li>
+            <li>负责上线后的运维迭代与答辩材料整理。</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="proj-block reveal">
+        <div class="proj-block__label">关键设计与技术</div>
+        <div class="proj-block__body">
+          <ul>
+            <li>前端：原生 HTML / CSS / JavaScript，单页 + 模块化，不引入重框架，便于两周内交付。</li>
+            <li>数据：localStorage + 云端轻同步；阅读统计基于用户事件流聚合。</li>
+            <li>AI 抽象层：抽象出统一接口，配合 Prompt 模板做语境化释义与简短例句。</li>
+            <li>心流仪表盘：基于真实事件流计算「最专注的 5 分钟」「被打断的次数」等轻量指标。</li>
+            <li>VS Code + AI 辅助开发：从需求文档到接口抽象都和高频复查。</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="proj-block reveal">
+        <div class="proj-block__label">成果</div>
+        <div class="proj-block__body">
+          <ul>
+            <li>获校级团队二等奖。</li>
+            <li>上线后累计获得 100+ 点赞评论与 50+ 后台用户使用数据。</li>
+            <li>项目报告 + 在线部署同步输出，PRD 与源代码在 GitHub 沉淀。</li>
+          </ul>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="container" style="padding-top: var(--space-24)">
+      <div class="proj-cta reveal">
+        <div class="proj-cta__text">
+          <h3>去试试看</h3>
+          <p>英文原文搭配自动生词，体验会顺一些。</p>
+        </div>
+        <a class="btn btn--accent" href="https://co-reader.pocketbay.app/" target="_blank" rel="noopener">
+          在线体验 →
+        </a>
+      </div>
+
+      <div class="proj-pager">
+        <a class="proj-pager__cell" href="under-the-bluestone.html">
+          <div class="proj-pager__hint">← 上一个</div>
+          <div class="proj-pager__name">《青石之下》</div>
+        </a>
+        <a class="proj-pager__cell proj-pager__cell--next" href="liangrenshe.html">
+          <div class="proj-pager__hint">下一个 →</div>
+          <div class="proj-pager__name">《量人蛇》</div>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__bottom">
+        <span>© <span data-year>2026</span> 汤军军</span>
+        <a href="../index.html" style="color: var(--ink-muted);">← 回到首页</a>
+      </div>
+    </div>
+  </footer>
+
+  <button class="totop" data-totop aria-label="回到顶部">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M8 14V2M2 8l6-6 6 6"/>
+    </svg>
+  </button>
+
+  <script src="../assets/js/nav.js"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

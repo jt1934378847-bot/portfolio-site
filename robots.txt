@@ -1,0 +1,8 @@
+# ⚠ 占位域名 · 上线域名确定后（B4 议题）请把下面两处替换为真实绝对 URL：
+#   1) Sitemap 那行
+#   2) 部署到自定义域名时，可能还需要把站点根路径也带上子路径前缀
+
+User-agent: *
+Allow: /
+
+Sitemap: https://jt1934378847-bot.github.io/portfolio-site/sitemap.xml

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 375" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="cr-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FBF8F3"/>
+      <stop offset="100%" stop-color="#EFE7FB"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="375" fill="url(#cr-bg)"/>
+  <rect x="60" y="50" width="480" height="275" rx="14" fill="#FFFFFF" stroke="#E8E0D2"/>
+  <rect x="60" y="50" width="480" height="36" rx="14" fill="#F3EEE4"/>
+  <circle cx="80" cy="68" r="4" fill="#E8A957"/>
+  <circle cx="96" cy="68" r="4" fill="#7B5CD6" opacity="0.4"/>
+  <circle cx="112" cy="68" r="4" fill="#7B5CD6" opacity="0.4"/>
+  <rect x="280" y="58" width="180" height="20" rx="10" fill="#F3EEE4"/>
+  <text x="100" y="115" font-family="Georgia, serif" font-size="13" fill="#4A443D">The morning light filtered through</text>
+  <text x="100" y="135" font-family="Georgia, serif" font-size="13" fill="#4A443D">the half-open shutters. She had waited</text>
+  <text x="100" y="155" font-family="Georgia, serif" font-size="13" fill="#4A443D">there since yesterday.</text>
+  <rect x="100" y="103" width="180" height="14" fill="#FAEBD2" opacity="0.6"/>
+  <text x="100" y="115" font-family="Georgia, serif" font-size="13" fill="#1F1B17">The morning light filtered through</text>
+  <rect x="100" y="160" width="2" height="80" fill="#7B5CD6"/>
+  <line x1="100" y1="180" x2="280" y2="180" stroke="#C9BFAB" stroke-width="1"/>
+  <line x1="100" y1="200" x2="240" y2="200" stroke="#C9BFAB" stroke-width="1"/>
+  <rect x="370" y="105" width="155" height="200" rx="8" fill="#F3EEE4"/>
+  <text x="385" y="125" font-family="-apple-system" font-size="10" fill="#847C72" letter-spacing="2">VOCAB · 心流</text>
+  <g font-family="Georgia, serif" font-size="11" fill="#1F1B17">
+    <text x="385" y="150">filtered  · 过滤的</text>
+    <text x="385" y="170">shutters  · 百叶窗</text>
+    <text x="385" y="190">waited   · 等候</text>
+    <text x="385" y="210">yesterday · 昨日</text>
+  </g>
+  <text x="100" y="305" font-family="Georgia, serif" font-size="32" fill="#1F1B17" font-weight="500">Co-Reader</text>
+  <text x="100" y="328" font-family="-apple-system" font-size="11" fill="#7B5CD6" letter-spacing="3">BILINGUAL READING · 2026</text>
+</svg>

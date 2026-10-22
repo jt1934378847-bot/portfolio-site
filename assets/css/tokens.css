@@ -1,0 +1,152 @@
+/* =========================================================================
+ * Design tokens — 站点所有视觉变量集中在此，其他文件只引用，禁止硬编码色值
+ * 配色思路：暖白底 + 暖紫强调 + 极少量暖黄点缀，整体偏「编辑感」
+ * ========================================================================= */
+
+:root {
+  /* —— 颜色 · 浅色模式 —— */
+  --bg:               #FBF8F3;          /* 暖白底 */
+  --bg-elevated:      #FFFFFF;          /* 卡片浮层 */
+  --bg-muted:         #F3EEE4;          /* 弱化区块 */
+  --ink:              #1F1B17;          /* 正文近黑 */
+  --ink-soft:         #4A443D;          /* 标题/次级文字 */
+  --ink-muted:        #847C72;          /* 三级文字、说明 */
+  --ink-faint:        #B5AC9F;          /* 极淡文字 */
+
+  --accent:           #7B5CD6;          /* 暖紫：唯一强调色 */
+  --accent-strong:    #5A3FB0;          /* 暖紫深：hover/选中 */
+  --accent-soft:      #EFE7FB;          /* 暖紫浅：背景块 */
+
+  --warm:             #E8A957;          /* 辅助暖黄，仅作点睛 */
+  --warm-soft:        #FAEBD2;
+
+  --line:             #E8E0D2;          /* 边框 */
+  --line-strong:      #C9BFAB;
+
+  /* —— 字体 —— */
+  --font-sans: -apple-system, BlinkMacSystemFont, "PingFang SC",
+               "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue",
+               Helvetica, Arial, sans-serif;
+  --font-serif: Georgia, "Songti SC", "STSong", "PingFang SC", serif;
+  --font-mono: "JetBrains Mono", "SF Mono", Menlo, Consolas, monospace;
+
+  /* —— 字号层级 12 / 14 / 16 / 20 / 28 / 40 / 64 —— */
+  --fs-12: 0.75rem;
+  --fs-14: 0.875rem;
+  --fs-16: 1rem;
+  --fs-20: 1.25rem;
+  --fs-28: 1.75rem;
+  --fs-40: 2.5rem;
+  --fs-64: 4rem;
+
+  /* —— 间距 —— */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-24: 96px;
+  --space-32: 128px;
+
+  /* —— 圆角、阴影 —— */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+
+  --shadow-sm: 0 1px 2px rgba(31, 27, 23, 0.04),
+               0 2px 6px rgba(31, 27, 23, 0.04);
+  --shadow-md: 0 4px 12px rgba(31, 27, 23, 0.06),
+               0 12px 32px rgba(31, 27, 23, 0.06);
+  --shadow-lg: 0 12px 32px rgba(31, 27, 23, 0.10),
+               0 28px 64px rgba(31, 27, 23, 0.08);
+
+  /* —— 容器 / 列宽 —— */
+  --container:        1200px;
+  --reading:          720px;
+
+  /* —— 动效 —— */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --dur-fast:   180ms;
+  --dur-mid:    280ms;
+  --dur-slow:   400ms;
+
+  /* —— 排版微调 —— */
+  --leading-tight: 1.25;
+  --leading-snug:  1.4;
+  --leading-body:  1.75;
+
+  /* —— 顶部导航 —— */
+  --nav-h:           64px;
+}
+
+/* —— 系统深色模式尊重 —— */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg:           #15120F;
+    --bg-elevated:  #1F1B17;
+    --bg-muted:     #25201B;
+    --ink:          #F4EFE6;
+    --ink-soft:     #D7CFC2;
+    --ink-muted:    #968D80;
+    --ink-faint:    #6A6258;
+    --accent:       #B59CFF;
+    --accent-strong:#D3C2FF;
+    --accent-soft:  #2C2240;
+    --warm:         #F4C078;
+    --warm-soft:    #3A2D1C;
+    --line:         #322C25;
+    --line-strong:  #4A4239;
+    --shadow-sm: 0 1px 2px rgba(0,0,0,0.4), 0 2px 6px rgba(0,0,0,0.3);
+    --shadow-md: 0 4px 12px rgba(0,0,0,0.45), 0 12px 32px rgba(0,0,0,0.4);
+    --shadow-lg: 0 12px 32px rgba(0,0,0,0.5), 0 28px 64px rgba(0,0,0,0.4);
+  }
+}
+
+/* —— 用户手动切换深浅色 —— */
+[data-theme="dark"] {
+  --bg:           #15120F;
+  --bg-elevated:  #1F1B17;
+  --bg-muted:     #25201B;
+  --ink:          #F4EFE6;
+  --ink-soft:     #D7CFC2;
+  --ink-muted:    #968D80;
+  --ink-faint:    #6A6258;
+  --accent:       #B59CFF;
+  --accent-strong:#D3C2FF;
+  --accent-soft:  #2C2240;
+  --warm:         #F4C078;
+  --warm-soft:    #3A2D1C;
+  --line:         #322C25;
+  --line-strong:  #4A4239;
+  --shadow-sm: 0 1px 2px rgba(0,0,0,0.4), 0 2px 6px rgba(0,0,0,0.3);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.45), 0 12px 32px rgba(0,0,0,0.4);
+  --shadow-lg: 0 12px 32px rgba(0,0,0,0.5), 0 28px 64px rgba(0,0,0,0.4);
+}
+[data-theme="light"] {
+  --bg:               #FBF8F3;
+  --bg-elevated:      #FFFFFF;
+  --bg-muted:         #F3EEE4;
+  --ink:              #1F1B17;
+  --ink-soft:         #4A443D;
+  --ink-muted:        #847C72;
+  --ink-faint:        #B5AC9F;
+  --accent:           #7B5CD6;
+  --accent-strong:    #5A3FB0;
+  --accent-soft:      #EFE7FB;
+  --warm:             #E8A957;
+  --warm-soft:        #FAEBD2;
+  --line:             #E8E0D2;
+  --line-strong:      #C9BFAB;
+}
+
+/* —— 减少动态效果 —— */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}

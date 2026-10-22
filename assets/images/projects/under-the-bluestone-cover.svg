@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="ubs-bg" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0%" stop-color="#0F0C1F"/>
+      <stop offset="55%" stop-color="#3A2C66"/>
+      <stop offset="100%" stop-color="#7B5CD6"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="900" fill="url(#ubs-bg)"/>
+  <rect width="1600" height="900" fill="url(#grid)"/>
+  <g fill="rgba(244,239,230,0.10)">
+    <polygon points="200,720 480,260 760,720"/>
+    <polygon points="640,720 920,180 1200,720"/>
+    <polygon points="1080,720 1360,320 1640,720 1640,900 1080,900"/>
+  </g>
+  <g fill="rgba(244,239,230,0.05)">
+    <polygon points="200,720 480,260 760,720"/>
+    <polygon points="640,720 920,180 1200,720"/>
+  </g>
+  <text x="120" y="450" font-family="Georgia, serif" font-size="180" fill="#F4EFE6" font-weight="500" letter-spacing="-6">青石之下</text>
+  <text x="120" y="510" font-family="-apple-system" font-size="22" letter-spacing="6" fill="#B59CFF">UNDER THE BLUESTONE  ·  A REASONING VISUAL NOVEL</text>
+  <text x="120" y="800" font-family="-apple-system" font-size="16" fill="rgba(244,239,230,0.6)" letter-spacing="3">莉莉丝高校游戏创作大赛 · 2026</text>
+</svg>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>404 — 汤军军</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/footer-avatar.svg" />
+  <link rel="stylesheet" href="assets/css/tokens.css" />
+  <link rel="stylesheet" href="assets/css/base.css" />
+  <link rel="stylesheet" href="assets/css/components.css" />
+  <style>
+    .err {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: var(--space-12);
+      text-align: center;
+    }
+    .err__num {
+      font-family: var(--font-serif);
+      font-size: clamp(8rem, 22vw, 14rem);
+      color: var(--accent);
+      line-height: 1;
+      letter-spacing: -0.04em;
+      margin-bottom: var(--space-6);
+    }
+    .err__h {
+      font-size: var(--fs-28);
+      margin-bottom: var(--space-4);
+    }
+    .err__p {
+      color: var(--ink-muted);
+      max-width: 40ch;
+      margin: 0 auto var(--space-8);
+    }
+  </style>
+</head>
+<body>
+
+  <header class="nav" role="banner">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__brand">汤军军<span class="nav__brand-dot" aria-hidden="true"></span></a>
+    </div>
+  </header>
+
+  <section class="err">
+    <div class="container">
+      <div class="err__num">404</div>
+      <h1 class="err__h">这里没有作品可看。</h1>
+      <p class="err__p">这条路走到一半断了。回头继续看其他几样吧。</p>
+      <a href="index.html" class="btn btn--primary">回到首页 →</a>
+    </div>
+  </section>
+
+</body>
+</html>

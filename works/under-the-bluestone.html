@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>《青石之下》 — 汤军军</title>
+  <meta name="description" content="校园霸凌主题推理文字游戏 · 莉莉丝高校游戏创作大赛参赛作品。剧情架构 + 程序实现。" />
+  <link rel="icon" type="image/svg+xml" href="../assets/images/footer-avatar.svg" />
+  <link rel="stylesheet" href="../assets/css/tokens.css" />
+  <link rel="stylesheet" href="../assets/css/base.css" />
+  <link rel="stylesheet" href="../assets/css/components.css" />
+</head>
+<body>
+
+  <a href="#main" class="skip-link">跳到主要内容</a>
+
+  <header class="nav" role="banner">
+    <div class="nav__inner">
+      <a href="../index.html" class="nav__brand">汤军军<span class="nav__brand-dot" aria-hidden="true"></span></a>
+      <nav class="nav__menu" aria-label="主导航">
+        <a href="../index.html#works" class="nav__link">作品</a>
+        <a href="../index.html#writing" class="nav__link">写作</a>
+        <a href="../index.html#about" class="nav__link">关于</a>
+        <a href="../index.html#contact" class="btn btn--primary nav__cta">联系</a>
+        <button class="nav__theme" data-theme-toggle type="button" aria-pressed="false" aria-label="切换深色模式">☾</button>
+      </nav>
+      <button class="nav__burger" aria-label="打开菜单" aria-expanded="false">
+        <svg width="20" height="14" viewBox="0 0 20 14" fill="none">
+          <path d="M0 1h20M0 7h20M0 13h20" stroke="currentColor" stroke-width="2"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="proj-hero">
+      <div class="container">
+        <div class="proj-hero__inner">
+          <div>
+            <span class="eyebrow reveal">线上项目 · 文字冒险</span>
+            <h1 class="proj-hero__title reveal">《青石之下》</h1>
+            <p class="proj-hero__tag reveal">
+              校园霸凌主题推理文字游戏，莉莉丝高校游戏创作大赛参赛作品。
+              三人团队，本人负责剧情架构与程序整体实现。
+            </p>
+            <div class="hero__cta reveal" style="margin-top: 32px">
+              <a href="https://jt1934378847-bot.github.io/underthebluestone/" target="_blank" rel="noopener" class="btn btn--primary">
+                在线试玩 <span class="arrow">→</span>
+              </a>
+              <a href="https://github.com/jt1934378847-bot" target="_blank" rel="noopener" class="btn btn--ghost">
+                GitHub
+              </a>
+              <a href="https://xhslink.cn/o/3KBDBGHQDei" target="_blank" rel="noopener" class="btn btn--ghost">
+                游戏 PV 简介 · 小红书
+              </a>
+            </div>
+          </div>
+          <dl class="proj-card reveal">
+            <div>
+              <dt>时间</dt>
+              <dd>2026.04</dd>
+            </div>
+            <div>
+              <dt>角色</dt>
+              <dd>剧情架构 / 程序实现</dd>
+            </div>
+            <div>
+              <dt>团队</dt>
+              <dd>三人（1 文案 · 1 美术 · 我）</dd>
+            </div>
+            <div>
+              <dt>主办</dt>
+              <dd>莉莉丝高校游戏创作大赛</dd>
+            </div>
+            <div>
+              <dt>交付</dt>
+              <dd>Mac / Windows 可执行软件包 · GitHub Pages 网页版</dd>
+            </div>
+            <div>
+              <dt>技术</dt>
+              <dd>Web 文本 / Electron 打包 / Git</dd>
+            </div>
+            <div>
+              <dt>PV</dt>
+              <dd><a href="https://xhslink.cn/o/3KBDBGHQDei" target="_blank" rel="noopener">游戏 PV 简介 · 小红书</a></dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="proj-cover reveal">
+          <img src="../assets/images/projects/under-the-bluestone-cover.svg" alt="《青石之下》封面视觉" width="1600" height="900" />
+        </div>
+      </div>
+    </section>
+
+    <section class="container reading" style="padding-top: var(--space-12)">
+
+      <div class="proj-block reveal">
+        <div class="proj-block__label">背景 / 问题</div>
+        <div class="proj-block__body">
+          <p>
+            莉莉丝高校游戏创作大赛面向全国高校征集原创游戏作品。我们想做一款围绕校园霸凌议题的推理文字游戏 —— 让玩家在文本推进中体会「沉默的旁观者」如何被卷入，从而引发一些共情和反思。
+          </p>
+          <p>
+            题材相对沉重，我们希望用一种克制的叙事节奏呈现：不能煽情，不能说教；让玩家在日常对话里慢慢感觉哪里不对。
+          </p>
+        </div>
+      </div>
+
+      <div class="proj-block reveal">
+        <div class="proj-block__label">我的工作</div>
+        <div class="proj-block__body">
+          <ul>
+            <li>在文本结构上拆解「主线 + 多分支」的剧情图，用节点文件记录每一个选项与触发条件，便于美术与文案并行维护。</li>
+            <li>设计「笔记本系统」：玩家可收集线索、记录可疑人物和动机，作为推理工具直接作为难度梯度 —— 线索丰富时推理自动变易，符合「边玩边整理」的体验。</li>
+            <li>负责前后端程序整体落地：界面、状态机、本地存档、窗口适配。在交付前完成 Mac / Windows 双平台可执行包。</li>
+            <li>基于 GitHub Pages 完成网页版部署，方便评委在线查看。</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="proj-block reveal">
+        <div class="proj-block__label">关键设计与技术</div>
+        <div class="proj-block__body">
+          <ul>
+            <li>节点式的剧情脚本：每个节点带 id、文本、选项和触发副作用，方便策划维护。</li>
+            <li>状态机驱动 UI：当前节点 → 选项 → 跳转下一个节点；笔记本系统在玩家标记和读取线索时触发不同的剧情路径。</li>
+            <li>本地存档使用 localStorage，Mac / Windows 通过 Electron 打包，节省学习成本。</li>
+            <li>版本管理使用 GitHub，PR + Issue 跟踪剧情节点。</li>
+            <li>通过 VS Code + AI 协作提升开发速度，主要样式与状态机代码单人即可维护。</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="proj-block reveal">
+        <div class="proj-block__label">成果</div>
+        <div class="proj-block__body">
+          <ul>
+            <li>完成可在线试玩版本与双端可执行包，按时提交参赛。</li>
+            <li>剧情节点共 60+，笔记本系统两条难度梯度。</li>
+            <li>作为参赛作品留档，沉淀了一套「轻量文字游戏」的可复用开发模板。</li>
+          </ul>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="container" style="padding-top: var(--space-24)">
+      <div class="proj-cta reveal">
+        <div class="proj-cta__text">
+          <h3>去试玩一下</h3>
+          <p>浏览器里就能玩；最好用桌面端，笔记本系统的交互更顺手。也可以先看
+            <a href="https://xhslink.cn/o/3KBDBGHQDei" target="_blank" rel="noopener">小红书上的游戏 PV</a>。</p>
+        </div>
+        <a class="btn btn--accent" href="https://jt1934378847-bot.github.io/underthebluestone/" target="_blank" rel="noopener">
+          在线试玩 →
+        </a>
+      </div>
+
+      <div class="proj-pager">
+        <a class="proj-pager__cell" href="../index.html">
+          <div class="proj-pager__hint">← 返回</div>
+          <div class="proj-pager__name">全部作品</div>
+        </a>
+        <a class="proj-pager__cell proj-pager__cell--next" href="co-reader.html">
+          <div class="proj-pager__hint">下一个项目 →</div>
+          <div class="proj-pager__name">Co-Reader</div>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__bottom">
+        <span>© <span data-year>2026</span> 汤军军</span>
+        <a href="../index.html" style="color: var(--ink-muted);">← 回到首页</a>
+      </div>
+    </div>
+  </footer>
+
+  <button class="totop" data-totop aria-label="回到顶部">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M8 14V2M2 8l6-6 6 6"/>
+    </svg>
+  </button>
+
+  <script src="../assets/js/nav.js"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

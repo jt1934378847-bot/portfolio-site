@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>汤军军 · 作品集 — In Publishing We Find</title>
+  <meta name="description" content="汤军军的个人作品集：出版硕士 / 游戏开发者 / 文字写作者 / 偶尔画点画。北京印刷学院数字出版方向，关注出版、游戏、AI 应用与设计。" />
+  <meta name="theme-color" content="#FBF8F3" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="汤军军 · 作品集" />
+  <meta property="og:description" content="出版硕士 · 游戏开发者 · 文字写作者 · 偶尔画点画" />
+  <meta property="og:type" content="website" />
+
+  <link rel="icon" type="image/svg+xml" href="assets/images/footer-avatar.svg" />
+
+  <link rel="stylesheet" href="assets/css/tokens.css" />
+  <link rel="stylesheet" href="assets/css/base.css" />
+  <link rel="stylesheet" href="assets/css/components.css" />
+</head>
+<body>
+
+  <a href="#main" class="skip-link">跳到主要内容</a>
+
+  <!-- ============================ 顶部导航 ============================ -->
+  <header class="nav" role="banner">
+    <div class="nav__inner">
+      <a href="#top" class="nav__brand">汤军军<span class="nav__brand-dot" aria-hidden="true"></span></a>
+      <nav class="nav__menu" aria-label="主导航">
+        <a href="#about"        class="nav__link">关于</a>
+        <a href="#timeline"     class="nav__link">经历</a>
+        <a href="#works"        class="nav__link">作品</a>
+        <a href="#skills"       class="nav__link">技能证书</a>
+        <a href="#contact"      class="nav__link">联系</a>
+        <button class="nav__theme" data-theme-toggle type="button" aria-pressed="false" aria-label="切换深色模式">☾</button>
+        <a href="#contact"      class="btn btn--primary nav__cta">联系我 →</a>
+      </nav>
+      <button class="nav__burger" aria-label="打开菜单" aria-expanded="false">
+        <svg width="20" height="14" viewBox="0 0 20 14" fill="none">
+          <path d="M0 1h20M0 7h20M0 13h20" stroke="currentColor" stroke-width="2"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+  <!-- ============================ 首屏 ============================ -->
+  <section class="hero" id="top">
+    <div class="container hero__inner">
+      <div class="hero__intro">
+        <span class="eyebrow reveal">作品集 · 2026</span>
+        <h1 class="hero__name reveal">
+          汤军军<br /><em>JunJun Tang</em>
+        </h1>
+        <p class="hero__line reveal">
+          出版硕士，经常写文、偶尔画画，最近喜欢用 AI 工具做些有意思的事。<br />
+          在「有限意义域」里寻找「无限答案」。
+        </p>
+        <div class="hero__cta reveal">
+          <a href="#works"   class="btn btn--primary">查看作品 <span class="arrow">→</span></a>
+          <a href="#contact" class="btn btn--ghost">联系我</a>
+        </div>
+        <div class="hero__meta reveal">
+          <strong>现居 北京</strong>
+          <strong>籍贯 湖南</strong>
+          <strong>北京印刷学院 · 出版硕士（数字出版方向）</strong>
+        </div>
+      </div>
+      <div class="hero__visual reveal">
+        <img class="hero__portrait"
+             src="assets/images/hero/portrait.jpg"
+             alt="汤军军的肖像"
+             width="600" height="750" />
+      </div>
+    </div>
+    <div class="hero__scroll" aria-hidden="true">SCROLL</div>
+  </section>
+
+  <!-- ============================ 关于 ============================ -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="eyebrow">ABOUT</span>
+        <h2 class="title">一个关于「在有限里找无限」的注脚</h2>
+      </div>
+
+      <div class="about__grid">
+        <figure class="about__photo reveal">
+          <img class="about__photo-img" alt="汤军军" width="960" height="960" loading="lazy" />
+          <figcaption>生活里的一张</figcaption>
+        </figure>
+        <div class="about__body">
+          <div class="about__text">
+            <p class="lead about__lede"></p>
+            <div class="about__paragraphs"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ 经历 ============================ -->
+  <section class="section" id="timeline">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="eyebrow">TIMELINE</span>
+        <h2 class="title">这些年走过的地方</h2>
+        <p class="muted">从长沙到北京，从物流管理到数字出版。</p>
+      </div>
+      <div class="timeline" data-timeline></div>
+    </div>
+  </section>
+
+  <!-- ============================ 作品（含写作与画廊） ============================ -->
+  <section class="section section--tight" id="works">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="eyebrow">SELECTED WORK</span>
+        <h2 class="title">做过的几件事</h2>
+        <p class="muted">两个可运行的项目、一组竞赛作品、一批文字，以及画和设计。</p>
+      </div>
+      <div class="works" data-featured></div>
+    </div>
+  </section>
+
+  <section class="section" id="writing">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="eyebrow">WRITING</span>
+        <h2 class="title">写过的东西</h2>
+        <p class="muted">纸媒发表、评论节选、短篇与随笔。</p>
+      </div>
+      <div data-writing-preview></div>
+    </div>
+  </section>
+
+  <!-- ============================ 公众号 / 小红书运营 ============================ -->
+  <section class="section section--tight" id="social">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="eyebrow">SELF MEDIA</span>
+        <h2 class="title">公众号 / 小红书运营</h2>
+        <p class="muted">公众号「亿点点心思」与小红书「Megalomaniac」。表达是另一种练习。</p>
+      </div>
+      <div class="social" data-social></div>
+      <p style="text-align:center;margin-top:var(--space-8);font-size:var(--fs-12);color:var(--ink-faint);letter-spacing:0.04em">
+        ※ 微信公众号「亿点点心思」因个人原因已停止运营，截图仅作历史内容存档。
+      </p>
+    </div>
+  </section>
+
+  <section class="section" id="gallery">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="eyebrow">VISUAL</span>
+        <h2 class="title">画过的与设计过的</h2>
+        <p class="muted">点击进入灯箱查看大图。</p>
+      </div>
+      <div class="gallery" data-gallery></div>
+    </div>
+  </section>
+
+  <!-- ============================ 技能 ============================ -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="eyebrow">SKILLS</span>
+        <h2 class="title">技能</h2>
+      </div>
+      <div class="skills" data-skills></div>
+    </div>
+  </section>
+
+  <!-- ============================ 证书与荣誉 ============================ -->
+  <section class="section" id="certs">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="eyebrow">CERTS &amp; AWARDS</span>
+        <h2 class="title">证书与荣誉</h2>
+      </div>
+      <div class="certs" data-certs></div>
+    </div>
+  </section>
+
+  <!-- ============================ 志愿服务证明 ============================ -->
+  <section class="section" id="service">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="eyebrow">VOLUNTEERING</span>
+        <h2 class="title">志愿服务证明</h2>
+      </div>
+      <div class="certs" data-service></div>
+    </div>
+  </section>
+
+  <!-- ============================ 联系 ============================ -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="eyebrow">CONTACT</span>
+        <h2 class="title">欢迎来联系我～</h2>
+      </div>
+
+      <div class="contact">
+        <p class="contact__big reveal">
+          邮件是最好的方式 —— <a href="mailto:1934378847@qq.com" data-copy-email data-email="1934378847@qq.com">1934378847@qq.com</a><br />
+          也可以电话（同微信）<a href="tel:18817134052">18817134052</a> 找到我。
+        </p>
+        <dl class="contact__channels reveal">
+          <div class="contact__row">
+            <dt>邮箱</dt>
+            <dd>
+              <a href="mailto:1934378847@qq.com" data-copy-email data-email="1934378847@qq.com">1934378847@qq.com</a>
+              <button class="contact__copy" data-copy-email data-email="1934378847@qq.com">复制</button>
+            </dd>
+          </div>
+          <div class="contact__row">
+            <dt>电话 / 微信</dt>
+            <dd><a href="tel:18817134052">18817134052</a></dd>
+          </div>
+          <div class="contact__row">
+            <dt>GitHub</dt>
+            <dd><a href="https://github.com/jt1934378847-bot" target="_blank" rel="noopener">@jt1934378847-bot</a></dd>
+          </div>
+          <div class="contact__row">
+            <dt>小红书</dt>
+            <dd>
+              <a href="https://xhslink.cn/o/90cUq6Ve3BG" target="_blank" rel="noopener">Megalomaniac（667132593）<span style="color:var(--ink-faint);font-size:var(--fs-12)"> · 125 粉丝 · 5239 获赞与收藏</span></a>
+            </dd>
+          </div>
+          <div class="contact__row">
+            <dt>公众号</dt>
+            <dd>亿点点心思<span style="color:var(--ink-faint);font-size:var(--fs-12)"> · 已停止运营</span></dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- ============================ 页脚 ============================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div>
+          <div class="footer__brand">汤军军</div>
+          <p class="footer__line">在有限意义域里寻找无限答案。</p>
+        </div>
+        <div class="footer__col">
+          <h4>站点</h4>
+          <ul>
+            <li><a href="#works">作品</a></li>
+            <li><a href="#timeline">经历</a></li>
+            <li><a href="#skills">技能证书</a></li>
+            <li><a href="#contact">联系</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>联系</h4>
+          <ul>
+            <li><a href="mailto:1934378847@qq.com" data-copy-email data-email="1934378847@qq.com">1934378847@qq.com</a></li>
+            <li><a href="tel:18817134052">18817134052（同微信）</a></li>
+            <li><a href="https://github.com/jt1934378847-bot" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="https://xhslink.cn/o/90cUq6Ve3BG" target="_blank" rel="noopener">小红书 Megalomaniac</a></li>
+            <li>公众号 亿点点心思（已停止运营）</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© <span data-year>2026</span> 汤军军 · Made with care in Beijing</span>
+        <img src="assets/images/footer-avatar.svg" alt="" />
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================ 灯箱 ============================ -->
+  <div class="lightbox" role="dialog" aria-modal="true" aria-hidden="true" aria-label="图片查看">
+    <button class="lightbox__close" aria-label="关闭">
+      <svg width="14" height="14" viewBox="0 0 14 14" stroke="currentColor" stroke-width="2" fill="none"><path d="M1 1l12 12M13 1L1 13"/></svg>
+    </button>
+    <button class="lightbox__nav lightbox__nav--prev" aria-label="上一张">
+      <svg width="14" height="14" viewBox="0 0 14 14" stroke="currentColor" stroke-width="2" fill="none"><path d="M9 1L3 7l6 6"/></svg>
+    </button>
+    <div class="lightbox__inner">
+      <img class="lightbox__img" alt="" />
+      <div class="lightbox__caption"></div>
+    </div>
+    <button class="lightbox__nav lightbox__nav--next" aria-label="下一张">
+      <svg width="14" height="14" viewBox="0 0 14 14" stroke="currentColor" stroke-width="2" fill="none"><path d="M5 1l6 6-6 6"/></svg>
+    </button>
+  </div>
+
+  <!-- ============================ 返回顶部 ============================ -->
+  <button class="totop" data-totop aria-label="回到顶部">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M8 14V2M2 8l6-6 6 6"/>
+    </svg>
+  </button>
+
+  <!-- Scripts -->
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/render.js"></script>
+  <script src="assets/js/lightbox.js"></script>
+  <script src="assets/js/nav.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
