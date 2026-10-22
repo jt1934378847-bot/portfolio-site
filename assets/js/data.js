@@ -180,10 +180,16 @@ window.SITE_DATA = (() => {
       src: "assets/images/certs/cert-superresume.jpg",
     },
     {
-      title: "校级三好学生 / 优秀青年志愿者 / 校级三等奖学金",
+      title: "校级三好学生",
       meta: "2020 – 2021",
       kind: "荣誉",
       src: "assets/images/certs/cert-honors.jpg",
+    },
+    {
+      title: "优秀青年志愿者",
+      meta: "2021.05 · 校级",
+      kind: "荣誉",
+      src: "assets/images/certs/cert-volunteer.jpg",
     },
     {
       title: "普通话二级甲等",
@@ -193,14 +199,9 @@ window.SITE_DATA = (() => {
     },
     {
       title: "大学英语六级 · 481 分",
-      meta: "2025.10",
+      meta: "2026.6",
       kind: "语言",
       src: "assets/images/certs/cert-cet6.jpg",
-    },
-    {
-      title: "C2 驾驶执照",
-      meta: "2024",
-      kind: "技能",
     },
   ];
 
