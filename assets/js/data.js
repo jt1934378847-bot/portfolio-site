@@ -620,7 +620,7 @@ const writingGroupsMeta = [
       .sort((a, b) => a.order - b.order)
       .map((it) => ({
         title: it.title,
-        meta: `${it.platform} · ${it.period}`,
+        meta: it.platform,
         excerpt: it.excerpt,
         url: `writing/index.html#${it.id}`,
       })),
