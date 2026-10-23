@@ -849,7 +849,8 @@
 }
 .footer__inner {
   display: grid;
-  grid-template-columns: 1.5fr 1fr 1fr;
+  /* 页脚现为「品牌 + 站点导航」两组，联系信息统一收在 #contact 区，避免重复 */
+  grid-template-columns: 1.5fr 1fr;
   gap: var(--space-12);
   align-items: start;
 }
