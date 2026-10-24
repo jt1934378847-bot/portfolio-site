@@ -24,11 +24,11 @@ window.SITE_DATA = (() => {
     lede:
       "出版在读硕士，常练笔、偶作画，近期热衷于用 AI 探索有趣且有意义的创造。",
     paragraphs: [
-      "我的路径不算笔直：本科攻读物流管理，研究生转向出版。跨界学习凝练的相同点是——信息如何抵达人。",
-      "围绕出版展开的研究与实践：曾跟随导师参与无障碍出版等课题，毕业论文聚焦少儿出版品牌建设；在读期间参与组织过三联市集，走访过中国出版集团，并在 BIBF 及《编辑之友》座谈会中担任志愿者；先后在高教社、北科社积累了长期的线上线下实习经验，并在小红书平台多次完成图书 repo 与资源置换。",
+      "我的路径不算直：本科攻读物流管理，研究生转向出版。跨界学习凝练的相同点是——信息如何抵达人。",
+      "围绕出版展开的研究与实践：跟随导师参与无障碍出版课题，毕业论文聚焦少儿出版品牌建设；在读期间参与组织过三联市集，走访过中国出版集团，并在 BIBF 及《编辑之友》座谈会中担任志愿者；先后在高教社、北科社积累了长期的线上线下实习经验，并在小红书平台多次完成图书 repo 与资源置换。",
       "业余时间，我既是泛文娱领域的深度体验者（阅读、观影、游戏、逛展），也是行动派——今年尝试借助 AI 工具赋能创作，尝试完成游戏开发、外语阅读工具构建及剧本可视化等落地项目。",
       "骨子里带着一种把事情稳稳做完的执着与责任感（INFJ / 九型 6 号忠诚者）。当前正保持着论文撰写、日常阅读与日语学习的节奏，同时也已开启求职投递，为明年的工作全力准备（意向城市：全国，不设限）。",
-      "谢谢你愿意花时间了解我。",
+      "谢谢您愿意花时间了解我。",
     ],
     quote: "在有限意义域里寻找无限答案。",
   };
@@ -39,8 +39,8 @@ window.SITE_DATA = (() => {
     {
       title: "《Co-Reader》",
       tag: "线上项目",
-      cover: "assets/images/projects/co-reader.svg",
-      alt: "《Co-Reader》双语阅读器产品预览图",
+      cover: "assets/images/projects/co-reader-demo.png",
+      alt: "《Co-Reader》双语阅读器界面截图",
       desc: "AI 赋能·数智创新创客训练营作品，获校级团队二等奖。集成多模型接口的双语阅读器，四人团队、本人为负责人。",
       role: "负责人 / 设计与开发",
       year: "2026.08",
@@ -52,20 +52,43 @@ window.SITE_DATA = (() => {
       tag: "线上项目",
       cover: "assets/images/projects/under-the-bluestone.svg",
       alt: "《青石之下》校园霸凌主题推理文字游戏封面",
-      desc: "莉莉丝高校游戏创作大赛参赛作品。校园霸凌主题推理文字游戏，负责剧情架构与程序实现，三人团队。",
+      desc: "莉莉丝高校游戏创作大赛参赛作品，本届命题「我的AI队友」——剧情、美术、程序三个环节都借助 AI 完成。校园霸凌主题推理文字游戏，负责剧情架构与程序实现，三人团队。",
       role: "剧情架构 / 程序实现",
       year: "2026.04",
       url: "works/under-the-bluestone.html",
       tags: ["文字冒险", "游戏", "GitHub Pages"],
     },
     {
-      title: "《行深智能无人车》商业策划",
+      title: "亚马逊选题开发skill",
+      tag: "AI 技能",
+      cover: "assets/images/projects/amazon-book-hunter.svg",
+      alt: "亚马逊图书选题开发 skill 的界面示意",
+      desc: "用百度搭子做的第一个 AI 技能，面向出版社外版书版权引进的选题开发：从亚马逊榜单扫描到单本深度评估，把排名、评论与授权难度整理成可直接决策的报告。",
+      role: "独立完成 / 提示词与流程设计",
+      year: "2026.04",
+      url: "works/amazon-book-hunter.html",
+      tags: ["AI Skill", "版权引进", "选题开发"],
+    },
+    {
+      title: "《量人蛇》",
+      tag: "短片创作",
+      cover: "assets/images/liangrenshe/prologue.jpg",
+      alt: "《量人蛇》东方奇幻短片序幕 · 立蛇画面",
+      desc: "东方奇幻短片：梦中循环遇见一条爱跟人比高低的妖怪。已完成剧本、分镜设计表与角色场景设定，按五幕依序推进视频化。",
+      role: "剧本 / 分镜 / 角色设定",
+      year: "2026",
+      url: "works/liangrenshe.html",
+      tags: ["短片", "剧本", "分镜"],
+    },
+    {
+      title: "CMAU 市场研究与商业策划",
       tag: "竞赛作品",
       cover: "assets/images/projects/cmau-cover.jpg",
       alt: "CMAU 全国大学生市场研究与商业策划大赛项目书封面",
-      desc: "CMAU 全国大学生市场研究与商业策划大赛企业命题项目。52 页项目书，覆盖 PEST 宏观分析、高校用户问卷与访谈、商业策划方案。团队「深藏blue」3 人。",
-      role: "团队成员",
+      desc: "CMAU 全国大学生市场研究与商业策划大赛企业命题项目。52 页项目书，覆盖 PEST 宏观分析、高校用户问卷与访谈、商业策划方案。团队「深藏blue」3 人，本人负责问卷访谈设计、数据分析、项目统筹与答辩 PPT。",
+      role: "负责人 / 问卷访谈设计 / 数据分析 / 项目统筹 / 答辩 PPT",
       year: "2022.08",
+      url: "works/cmau.html",
       tags: ["市场研究", "商业策划", "PEST"],
     },
     {
@@ -85,15 +108,15 @@ window.SITE_DATA = (() => {
   const skills = [
     {
       title: "出版与内容",
-      items: ["选题策划", "编辑校对", "营销文案", "学术研究", "无障碍出版"],
+      items: ["选题策划", "编辑校对", "营销文案", "学术研究", "出版印制", "品牌研究"],
     },
     {
       title: "设计与视觉",
-      items: ["海报设计", "书封设计", "手绘 / 速写", "信息图", "Adobe 套件（基础）"],
+      items: ["海报设计", "书封设计", "手绘 / 板绘", "信息图", "Adobe 套件（基础）"],
     },
     {
       title: "技术 / 开发",
-      items: ["HTML / CSS / JavaScript", "VS Code + AI 协作", "Git / GitHub Pages", "Node 脚本", "提示词工程"],
+      items: ["HTML / CSS / JavaScript", "VS Code + AI 协作", "Git / GitHub Pages", "提示词工程"],
     },
     {
       title: "语言",
@@ -101,7 +124,7 @@ window.SITE_DATA = (() => {
     },
     {
       title: "通用",
-      items: ["信息检索", "数据分析", "办公自动化", "MS Office / WPS"],
+      items: ["信息检索", "数据分析", "项目管理", "办公自动化", "MS Office / WPS"],
     },
   ];
 
@@ -432,7 +455,7 @@ const writingGroupsMeta = [
       title: "剧评",
       badge: "小红书",
       status: "xhs",
-      platform: "剧评 · 5 篇",
+      platform: "剧评 · 4 篇",
       excerpt: "",
       body: [],
       works: [
@@ -450,11 +473,6 @@ const writingGroupsMeta = [
           name: "《恋爱契科夫》",
           note: "资源置换",
           excerpt: "波波娃对爱情的理解前期掺杂了不必要的精神枷锁和世俗矛盾。斯米尔诺夫戴上熊头玩偶呆呆站着的时候真的很像蠢熊，也像公主童话里的野兽。",
-        },
-        {
-          name: "《嫌疑人福尔摩斯》",
-          note: "",
-          excerpt: "在音乐厅地下一层专门设置了贝克街主题长廊——免费实景解密，狠狠代入侦探、享受解密的快乐。还有演职人员的数字交互人像，对没做前情了解的朋友看剧很友好。",
         },
         {
           name: "《朱莉小姐》",
@@ -631,22 +649,23 @@ const writingGroupsMeta = [
 
   /* ========== 视觉作品（画廊）========== */
   const gallery = [
-    { src: "assets/images/gallery/drawing-01.jpg",  alt: "画 1",  size: "tall",   caption: "速写 · 2024" },
-    { src: "assets/images/gallery/drawing-02.jpg",  alt: "画 2",  size: "square", caption: "速写 · 2025" },
-    { src: "assets/images/gallery/drawing-03.jpg",  alt: "画 3",  size: "small",  caption: "速写 · 2024" },
-    { src: "assets/images/gallery/drawing-04.jpg",  alt: "画 4",  size: "wide",   caption: "速写 · 2025" },
-    { src: "assets/images/gallery/drawing-05.jpg",  alt: "画 5",  size: "tall",   caption: "速写 · 2025" },
-    { src: "assets/images/gallery/drawing-06.jpg",  alt: "画 6",  size: "square", caption: "速写 · 2026" },
-    { src: "assets/images/gallery/drawing-07.jpg",  alt: "画 7",  size: "small",  caption: "速写 · 2024" },
-    { src: "assets/images/gallery/drawing-08.jpg",  alt: "画 8",  size: "tall",   caption: "速写 · 2025" },
-    { src: "assets/images/gallery/drawing-09.jpg",  alt: "画 9",  size: "wide",   caption: "速写 · 2026" },
-    { src: "assets/images/gallery/drawing-10.jpg",  alt: "画 10", size: "square", caption: "速写 · 2025" },
-    { src: "assets/images/gallery/drawing-11.jpg",  alt: "画 11", size: "small",  caption: "速写 · 2026" },
-    { src: "assets/images/gallery/comic-01.jpg",    alt: "四格漫画", size: "wide",   caption: "四格漫画 · 2024" },
-    { src: "assets/images/gallery/design-01.jpg",   alt: "书封设计", size: "tall",  caption: "书封设计 · 2025" },
-    { src: "assets/images/gallery/design-02.jpg",   alt: "书封设计草稿", size: "square", caption: "书封设计草稿 · 2025" },
-    { src: "assets/images/projects/poster-01.jpg",  alt: "海报临摹 1", size: "tall", caption: "海报临摹 · 2026" },
-    { src: "assets/images/projects/poster-02.jpg",  alt: "海报临摹 2", size: "tall", caption: "海报临摹 · 2026" },
+    { src: "assets/images/gallery/drawing-01.jpg",  alt: "画 1",  caption: "随便画画" },
+    { src: "assets/images/gallery/drawing-02.jpg",  alt: "画 2",  caption: "随便画画" },
+    { src: "assets/images/gallery/drawing-03.jpg",  alt: "画 3",  caption: "随便画画" },
+    { src: "assets/images/gallery/drawing-04.jpg",  alt: "画 4",  caption: "随便画画" },
+    { src: "assets/images/gallery/drawing-05.jpg",  alt: "画 5",  caption: "随便画画" },
+    { src: "assets/images/gallery/drawing-12.jpg",  alt: "画 12", caption: "随便画画" },
+    { src: "assets/images/gallery/drawing-06.jpg",  alt: "画 6",  caption: "随便画画" },
+    { src: "assets/images/gallery/drawing-07.jpg",  alt: "画 7",  caption: "随便画画" },
+    { src: "assets/images/gallery/drawing-08.jpg",  alt: "画 8",  caption: "随便画画" },
+    { src: "assets/images/gallery/drawing-09.jpg",  alt: "画 9",  caption: "随便画画" },
+    { src: "assets/images/gallery/drawing-10.jpg",  alt: "画 10", caption: "随便画画" },
+    { src: "assets/images/gallery/drawing-11.jpg",  alt: "画 11", caption: "随便画画" },
+    { src: "assets/images/gallery/comic-01.jpg",    alt: "四格漫画", caption: "四格漫画 · 2024" },
+    { src: "assets/images/gallery/design-02.jpg",   alt: "书封设计草稿", caption: "书封设计草稿 · 2025" },
+    { src: "assets/images/gallery/design-01.jpg",   alt: "书封设计", caption: "书封设计 · 2025" },
+    { src: "assets/images/projects/poster-01.jpg",  alt: "海报临摹 1", caption: "海报临摹 · 2026" },
+    { src: "assets/images/projects/poster-02.jpg",  alt: "海报临摹 2", caption: "海报临摹 · 2026" },
   ];
 
   /* ========== 自媒体与运营 ========== */

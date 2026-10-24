@@ -208,10 +208,10 @@
     grid.innerHTML = "";
     D.gallery.forEach((g, i) => {
       const fig = tag("figure", {
-        class: `gallery__item gallery__item--${g.size || "square"} reveal`,
+        class: "gallery__item reveal",
         "data-lightbox-target": i,
       });
-      fig.appendChild(tag("img", { src: g.src, alt: g.alt, loading: "lazy", width: 800, height: 800 }));
+      fig.appendChild(tag("img", { src: g.src, alt: g.alt, loading: "lazy" }));
       fig.appendChild(tag("figcaption", {}, g.caption));
       grid.appendChild(fig);
     });

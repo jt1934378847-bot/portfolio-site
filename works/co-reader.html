@@ -92,7 +92,7 @@
         </div>
 
         <div class="proj-cover reveal">
-          <img src="../assets/images/projects/co-reader-cover.svg" alt="Co-Reader 封面视觉" width="1600" height="900" />
+          <img src="../assets/images/projects/co-reader-demo.png" alt="Co-Reader 阅读界面截图：日语原文与 AI 学习助手侧栏" width="2358" height="1250" />
         </div>
       </div>
     </section>
@@ -103,7 +103,7 @@
         <div class="proj-block__label">背景 / 问题</div>
         <div class="proj-block__body">
           <p>
-            创客训练营要求两周内产出一个最小可行产品。我一直以来有「读英文读不下去」的问题，身边很多人也如此 —— 工具一多就分心，工具一少又读不下去。
+            创客训练营要求一周内产出一个最小可行产品。我一直以来有「读英文读不下去」的问题，身边很多人也如此 —— 工具一多就分心，工具一少又读不下去。
           </p>
           <p>
             我想做的是：把「学」嵌入「读」里。让生词、高亮、统计这些动作成为阅读的副产品，而不打断阅读本身。
@@ -127,7 +127,7 @@
         <div class="proj-block__label">关键设计与技术</div>
         <div class="proj-block__body">
           <ul>
-            <li>前端：原生 HTML / CSS / JavaScript，单页 + 模块化，不引入重框架，便于两周内交付。</li>
+            <li>前端：原生 HTML / CSS / JavaScript，单页 + 模块化，不引入重框架，便于一周内交付。</li>
             <li>数据：localStorage + 云端轻同步；阅读统计基于用户事件流聚合。</li>
             <li>AI 抽象层：抽象出统一接口，配合 Prompt 模板做语境化释义与简短例句。</li>
             <li>心流仪表盘：基于真实事件流计算「最专注的 5 分钟」「被打断的次数」等轻量指标。</li>
@@ -153,21 +153,26 @@
       <div class="proj-cta reveal">
         <div class="proj-cta__text">
           <h3>去试试看</h3>
-          <p>英文原文搭配自动生词，体验会顺一些。</p>
+          <p>下载英文原版样书，搭配自用AI，体验会顺一些。</p>
         </div>
-        <a class="btn btn--accent" href="https://co-reader.pocketbay.app/" target="_blank" rel="noopener">
-          在线体验 →
-        </a>
+        <div class="proj-cta__actions">
+          <a class="btn btn--accent" href="https://co-reader.pocketbay.app/" target="_blank" rel="noopener">
+            在线体验 →
+          </a>
+          <a class="btn btn--ghost" href="../assets/files/normal-people-sample.epub" download>
+            下载样书（epub）↓
+          </a>
+        </div>
       </div>
 
       <div class="proj-pager">
-        <a class="proj-pager__cell" href="under-the-bluestone.html">
-          <div class="proj-pager__hint">← 上一个</div>
-          <div class="proj-pager__name">《青石之下》</div>
+        <a class="proj-pager__cell" href="../index.html">
+          <div class="proj-pager__hint">← 返回</div>
+          <div class="proj-pager__name">全部作品</div>
         </a>
-        <a class="proj-pager__cell proj-pager__cell--next" href="liangrenshe.html">
+        <a class="proj-pager__cell proj-pager__cell--next" href="under-the-bluestone.html">
           <div class="proj-pager__hint">下一个 →</div>
-          <div class="proj-pager__name">《量人蛇》</div>
+          <div class="proj-pager__name">《青石之下》</div>
         </a>
       </div>
     </section>

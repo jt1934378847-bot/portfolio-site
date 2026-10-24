@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>亚马逊选题开发skill — 汤军军</title>
+  <meta name="description" content="用百度搭子做的第一个 AI 技能：面向出版社外版书版权引进的选题开发流程，覆盖亚马逊榜单扫描、单本评估、中文版核对与授权难度分级。" />
+  <link rel="icon" type="image/svg+xml" href="../assets/images/footer-avatar.svg" />
+  <link rel="stylesheet" href="../assets/css/tokens.css" />
+  <link rel="stylesheet" href="../assets/css/base.css" />
+  <link rel="stylesheet" href="../assets/css/components.css" />
+</head>
+<body>
+
+  <a href="#main" class="skip-link">跳到主要内容</a>
+
+  <header class="nav" role="banner">
+    <div class="nav__inner">
+      <a href="../index.html" class="nav__brand">汤军军<span class="nav__brand-dot" aria-hidden="true"></span></a>
+      <nav class="nav__menu" aria-label="主导航">
+        <a href="../index.html#works" class="nav__link">作品</a>
+        <a href="../index.html#writing" class="nav__link">写作</a>
+        <a href="../index.html#about" class="nav__link">关于</a>
+        <a href="../index.html#contact" class="btn btn--primary nav__cta">联系</a>
+        <button class="nav__theme" data-theme-toggle type="button" aria-pressed="false" aria-label="切换深色模式">☾</button>
+      </nav>
+      <button class="nav__burger" aria-label="打开菜单" aria-expanded="false">
+        <svg width="20" height="14" viewBox="0 0 20 14" fill="none">
+          <path d="M0 1h20M0 7h20M0 13h20" stroke="currentColor" stroke-width="2"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="proj-hero">
+      <div class="container">
+        <div class="proj-hero__inner">
+          <div>
+            <span class="eyebrow reveal">AI 技能 · 版权引进</span>
+            <h1 class="proj-hero__title reveal">亚马逊选题开发skill</h1>
+            <p class="proj-hero__tag reveal">
+              我用百度搭子做的第一个技能。它把「一本外版书值不值得引进」的判断拆成可以重复执行的流程：先看榜单，再核中文版，最后给出授权难度与下一步建议。
+            </p>
+            <div class="hero__cta reveal" style="margin-top: 32px">
+              <a href="#background" class="btn btn--primary">
+                看技能设计 <span class="arrow">→</span>
+              </a>
+              <a href="../index.html#contact" class="btn btn--ghost">
+                聊出版选题
+              </a>
+            </div>
+          </div>
+          <dl class="proj-card reveal">
+            <div>
+              <dt>时间</dt>
+              <dd>2026.04</dd>
+            </div>
+            <div>
+              <dt>角色</dt>
+              <dd>独立完成 · 提示词与流程设计</dd>
+            </div>
+            <div>
+              <dt>形态</dt>
+              <dd>百度搭子（DuMate）自定义技能</dd>
+            </div>
+            <div>
+              <dt>面向</dt>
+              <dd>出版社外版书版权引进 · 选题开发</dd>
+            </div>
+            <div>
+              <dt>工作模式</dt>
+              <dd>榜单扫描 · 单本快评 · 单本深度 · 系列评估 · 批量扫描</dd>
+            </div>
+            <div>
+              <dt>分析维度</dt>
+              <dd>上榜周数 · 中文版状态 · 试读合规 · 评论画像 · 授权难度 · 关联图书</dd>
+            </div>
+            <div>
+              <dt>输出</dt>
+              <dd>榜单扫描报告 · 引进评估快报 · 深度评估报告</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="proj-cover reveal">
+          <img src="../assets/images/projects/amazon-book-hunter-cover.svg" alt="亚马逊选题开发 skill 的界面示意图" width="1600" height="900" />
+        </div>
+      </div>
+    </section>
+
+    <section class="container reading" style="padding-top: var(--space-12)">
+
+      <div class="proj-block reveal" id="background">
+        <div class="proj-block__label">背景 / 问题</div>
+        <div class="proj-block__body">
+          <p>
+            选题会上常见的问题是：一本外版书到底值不值得引进。判断依据往往散落在榜单排名、读者评论、版权代理和国内对标书之间，每换一个人、每换一本书，标准就漂移一次。
+          </p>
+          <p>
+            我不想每次都重新解释一遍判断逻辑，所以把它做成了一个技能：把亚马逊的可采集数据、中文版核对渠道、试读合规检查和授权难度分级固化成同一套流程，让每次筛选都在同一把尺子下完成。
+          </p>
+        </div>
+      </div>
+
+      <div class="proj-block reveal">
+        <div class="proj-block__label">我的工作</div>
+        <div class="proj-block__body">
+          <ul>
+            <li>拆出五个工作模式并按场景分工：日常筛选用榜单扫描，重点选题走深度评估，系列书打包判断，大规模选题库分批扫描。</li>
+            <li>把每个模式写成明确的执行步骤与采集清单，减少每次重复交代要什么数据。</li>
+            <li>设计个性化配置（config.md）：社内选题方向、偏好设置、常用版权代理、报告详细程度，让技能按社内口径说话。</li>
+            <li>补一张常见问题处理表：页面需登录、排名数据缺失、试读不可访问、系列信息复杂时的降级方案。</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="proj-block reveal">
+        <div class="proj-block__label">关键设计与判断逻辑</div>
+        <div class="proj-block__body">
+          <ul>
+            <li><strong>榜单入口</strong>：以 Amazon Charts 的热读榜 / 热销榜为主入口，兼顾 Best Sellers 分类榜单，扫描默认取 TOP 20。</li>
+            <li><strong>市场验证</strong>：把上榜周数、排名变化、评分与评论数当作市场验证的代理指标，13 周以上视为长销信号，26 周以上视为现象级。</li>
+            <li><strong>中文版核对</strong>：豆瓣优先、当当次之；先确认是否已有中文版或仅有英文原版条目，再决定进入哪一轮评估。</li>
+            <li><strong>试读合规</strong>：对试读内容做合规检查（政治、宗教、暴力、毒品、歧视等），标出风险点、题材匹配度与建议译名。</li>
+            <li><strong>授权难度</strong>：按出版社类型分成高 / 中 / 低三级，并给出询价对象建议——版权代理、出版社版权部门，或直接联系作者。</li>
+            <li><strong>输出模板</strong>：结论、核心理由、下一步建议分开写；数据一律标注采集时间。</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="proj-block reveal">
+        <div class="proj-block__label">成果与边界</div>
+        <div class="proj-block__body">
+          <ul>
+            <li>产出：一份可以直接拿去和编辑讨论的报告——榜单扫描报告、引进评估快报、深度评估报告三类。</li>
+            <li>我的收获：第一次完整地把自己的判断标准写成流程，也第一次体会到「提示词其实是在做编辑规范」。</li>
+            <li>边界：版权状态与排名数据都有时效性，报告里只写「需确认」与采集时间，不替版权方下结论。</li>
+          </ul>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="container" style="padding-top: var(--space-24)">
+      <div class="proj-cta reveal">
+        <div class="proj-cta__text">
+          <h3>下载这个 skill</h3>
+          <p>这套流程已打包成可安装的 AI 技能，下载后放进你的技能目录即可复用；如果你也在做外版书引进，欢迎一起讨论它还缺什么。</p>
+        </div>
+        <div class="proj-cta__actions">
+          <a class="btn btn--accent" href="../assets/files/amazon-book-hunter-skill.zip" download>
+            下载 skill（zip）↓
+          </a>
+          <a class="btn btn--ghost" href="../index.html#contact">
+            找我聊聊 →
+          </a>
+        </div>
+      </div>
+
+      <div class="proj-pager">
+        <a class="proj-pager__cell" href="under-the-bluestone.html">
+          <div class="proj-pager__hint">← 上一个</div>
+          <div class="proj-pager__name">《青石之下》</div>
+        </a>
+        <a class="proj-pager__cell proj-pager__cell--next" href="liangrenshe.html">
+          <div class="proj-pager__hint">下一个 →</div>
+          <div class="proj-pager__name">《量人蛇》</div>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__bottom">
+        <span>© <span data-year>2026</span> 汤军军</span>
+        <a href="../index.html" style="color: var(--ink-muted);">← 回到首页</a>
+      </div>
+    </div>
+  </footer>
+
+  <button class="totop" data-totop aria-label="回到顶部">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M8 14V2M2 8l6-6 6 6"/>
+    </svg>
+  </button>
+
+  <script src="../assets/js/nav.js"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

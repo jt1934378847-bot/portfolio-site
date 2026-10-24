@@ -638,6 +638,27 @@
   }
 }
 
+/* 「画过的与设计过的」改为按图片原始比例完整展示的瀑布流 */
+.gallery--flow {
+  display: block;
+  columns: 4;
+  column-gap: var(--space-4);
+}
+.gallery--flow .gallery__item {
+  aspect-ratio: auto;
+  margin: 0 0 var(--space-4);
+  break-inside: avoid;
+}
+.gallery--flow .gallery__item img {
+  height: auto;
+}
+@media (max-width: 768px) {
+  .gallery--flow { columns: 2; }
+}
+@media (max-width: 480px) {
+  .gallery--flow { columns: 1; }
+}
+
 /* ============================ 灯箱 ============================ */
 .lightbox {
   position: fixed;
@@ -822,13 +843,33 @@
 }
 
 /* ============================ 自媒体 ============================ */
+/* 横向滚动：卡片固定宽度、可左右拖动，避免 12 张图堆成三行把版面拉长 */
 .social {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  display: flex;
   gap: var(--space-4);
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x proximity;
+  scroll-padding-inline: var(--space-2);
+  padding: var(--space-2) var(--space-2) var(--space-6);
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-x: contain;
+  scrollbar-width: thin;
+  scrollbar-color: var(--line-strong) transparent;
+}
+.social::-webkit-scrollbar { height: 8px; }
+.social::-webkit-scrollbar-track { background: transparent; }
+.social::-webkit-scrollbar-thumb {
+  background: var(--line-strong);
+  border-radius: 999px;
 }
 .social__item {
+  flex: 0 0 auto;
+  width: clamp(180px, 22vw, 260px);
+  scroll-snap-align: start;
+  /* 统一呈现：所有卡片同宽同高、同一圆角与描边，不再出现个别直角/带白边的样子 */
   border-radius: var(--radius-md);
+  border: 1px solid var(--line);
   overflow: hidden;
   background: var(--bg-muted);
   aspect-ratio: 4/5;
@@ -840,6 +881,10 @@
   transition: transform var(--dur-slow) var(--ease-out);
 }
 .social__item:hover img { transform: scale(1.04); }
+
+@media (max-width: 600px) {
+  .social__item { width: clamp(160px, 56vw, 220px); }
+}
 
 /* ============================ 页脚 ============================ */
 .footer {
@@ -1010,6 +1055,12 @@
   margin-bottom: var(--space-2);
 }
 .proj-cta__text p { color: var(--ink-muted); font-size: var(--fs-14); }
+.proj-cta__actions {
+  display: flex;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+  align-items: center;
+}
 
 /* ============================ 返回顶部 ============================ */
 .totop {

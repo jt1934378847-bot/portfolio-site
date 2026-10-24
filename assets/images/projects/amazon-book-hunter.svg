@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 375" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="abh-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FBF8F3"/>
+      <stop offset="100%" stop-color="#EFE7FB"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="375" fill="url(#abh-bg)"/>
+  <rect x="60" y="50" width="480" height="275" rx="14" fill="#FFFFFF" stroke="#E8E0D2"/>
+  <rect x="60" y="50" width="480" height="36" rx="14" fill="#F3EEE4"/>
+  <circle cx="80" cy="68" r="4" fill="#E8A957"/>
+  <circle cx="96" cy="68" r="4" fill="#7B5CD6" opacity="0.4"/>
+  <circle cx="112" cy="68" r="4" fill="#7B5CD6" opacity="0.4"/>
+  <rect x="280" y="58" width="180" height="20" rx="10" fill="#F3EEE4"/>
+  <text x="100" y="110" font-family="-apple-system" font-size="10" fill="#847C72" letter-spacing="2">AMAZON CHARTS · TOP 20</text>
+
+  <g>
+    <rect x="100" y="124" width="16" height="16" rx="4" fill="#EFE7FB"/>
+    <text x="105" y="136" font-family="-apple-system" font-size="9" fill="#7B5CD6">1</text>
+    <rect x="126" y="128" width="150" height="8" rx="4" fill="#E8E0D2"/>
+    <rect x="288" y="125" width="50" height="14" rx="7" fill="#FAEBD2"/>
+    <text x="298" y="135" font-family="-apple-system" font-size="8" fill="#8A7A5E">26 周</text>
+  </g>
+  <g>
+    <rect x="100" y="148" width="16" height="16" rx="4" fill="#EFE7FB"/>
+    <text x="105" y="160" font-family="-apple-system" font-size="9" fill="#7B5CD6">2</text>
+    <rect x="126" y="152" width="130" height="8" rx="4" fill="#E8E0D2"/>
+    <rect x="288" y="149" width="50" height="14" rx="7" fill="#FAEBD2"/>
+    <text x="298" y="159" font-family="-apple-system" font-size="8" fill="#8A7A5E">18 周</text>
+  </g>
+  <g>
+    <rect x="100" y="172" width="16" height="16" rx="4" fill="#EFE7FB"/>
+    <text x="105" y="184" font-family="-apple-system" font-size="9" fill="#7B5CD6">3</text>
+    <rect x="126" y="176" width="164" height="8" rx="4" fill="#E8E0D2"/>
+    <rect x="288" y="173" width="50" height="14" rx="7" fill="#F3EEE4"/>
+    <text x="300" y="183" font-family="-apple-system" font-size="8" fill="#847C72">12 周</text>
+  </g>
+  <g>
+    <rect x="100" y="196" width="16" height="16" rx="4" fill="#EFE7FB"/>
+    <text x="105" y="208" font-family="-apple-system" font-size="9" fill="#7B5CD6">4</text>
+    <rect x="126" y="200" width="120" height="8" rx="4" fill="#E8E0D2"/>
+    <rect x="288" y="197" width="50" height="14" rx="7" fill="#F3EEE4"/>
+    <text x="300" y="207" font-family="-apple-system" font-size="8" fill="#847C72">6 周</text>
+  </g>
+  <g>
+    <rect x="100" y="220" width="16" height="16" rx="4" fill="#EFE7FB"/>
+    <text x="105" y="232" font-family="-apple-system" font-size="9" fill="#7B5CD6">5</text>
+    <rect x="126" y="224" width="142" height="8" rx="4" fill="#E8E0D2"/>
+    <rect x="288" y="221" width="50" height="14" rx="7" fill="#F3EEE4"/>
+    <text x="300" y="231" font-family="-apple-system" font-size="8" fill="#847C72">2 周</text>
+  </g>
+  <rect x="100" y="252" width="238" height="1" fill="#E8E0D2"/>
+  <rect x="100" y="262" width="70" height="12" rx="6" fill="#EAF3E8"/>
+  <text x="108" y="271" font-family="-apple-system" font-size="8" fill="#5C7A57">已有中文版</text>
+  <rect x="178" y="262" width="62" height="12" rx="6" fill="#FAEBD2"/>
+  <text x="186" y="271" font-family="-apple-system" font-size="8" fill="#8A7A5E">待确认</text>
+  <rect x="248" y="262" width="90" height="12" rx="6" fill="#EFE7FB"/>
+  <text x="256" y="271" font-family="-apple-system" font-size="8" fill="#7B5CD6">无中文版</text>
+
+  <rect x="370" y="105" width="155" height="200" rx="8" fill="#F3EEE4"/>
+  <text x="385" y="125" font-family="-apple-system" font-size="10" fill="#847C72" letter-spacing="2">授权难度</text>
+  <g font-family="-apple-system" font-size="11" fill="#1F1B17">
+    <text x="385" y="150">低 · 独立社</text>
+    <text x="385" y="174">中 · 大集团</text>
+    <text x="385" y="198">高 · 已有中文版</text>
+  </g>
+  <rect x="385" y="214" width="125" height="1" fill="#E8E0D2"/>
+  <text x="385" y="234" font-family="-apple-system" font-size="10" fill="#847C72" letter-spacing="2">输出</text>
+  <g font-family="-apple-system" font-size="11" fill="#1F1B17">
+    <text x="385" y="255">榜单扫描报告</text>
+    <text x="385" y="273">引进评估快报</text>
+    <text x="385" y="291">系列评估报告</text>
+  </g>
+
+  <rect x="100" y="290" width="2" height="22" fill="#7B5CD6"/>
+  <text x="112" y="307" font-family="Georgia, serif" font-size="30" fill="#1F1B17" font-weight="500">Amazon Book Hunter</text>
+  <text x="100" y="328" font-family="-apple-system" font-size="11" fill="#7B5CD6" letter-spacing="3">版权引进 · 选题开发内参 · SKILL</text>
+</svg>
